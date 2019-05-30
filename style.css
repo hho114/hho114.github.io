@@ -1,6 +1,6 @@
-html, body { color: #434242; font-family: 'Open Sans', sans-serif !important; height: 100%; margin: 0;padding: 0;}
+html, body {scroll-behavior: smooth; color: #434242; font-family: 'Open Sans', sans-serif !important; height: 100%; margin: 0;padding: 0;}
 body { 
-    background-image: url("one_punch1.jpg");
+    background-image: url("images/one_punch1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -71,10 +71,6 @@ body {
     padding: 20px;   
 }
 
-/* #profile .row > div { 
-    margin-bottom: 20px; 
-    position: center;
-} */
 #profile img { 
     border: 1px solid white;
     width: 200px; 
