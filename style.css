@@ -123,6 +123,8 @@ h1{ text-align: center; margin: 0; padding: 0; color: gray;}
     position: absolute;
     top: 0px;
     left: 0px;
+    height: 100%;
+    width: 100%;
     
 }
 #projects figure .icon { 
