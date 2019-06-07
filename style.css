@@ -1,18 +1,26 @@
-html, body {scroll-behavior: smooth; color: #434242; font-family: 'Open Sans', sans-serif !important; height: 100%; margin: 0;padding: 0;}
+html, body {scroll-behavior: smooth; color: dimgray; font-family: 'Open Sans', sans-serif !important; height: 100%; margin: 0;padding: 0;}
 body { 
     background-image: url("images/one_punch1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    font-size: 15px; 
+    line-height: 1.64;
     
     
     }
+h1{ text-align: center; margin: 0; padding: 0; color: gray;}
+
+.background-white { background: white; padding-bottom: 20px;}
+.background-wheat { background:wheat; padding-bottom: 20px;}
+.background-grey{background:dimgray;color: white;padding-bottom: 20px;}
+
 
 
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-color: gray;
+    background-color: dimgray;
   /* Set a specific height */
   height: 100%;
   width: 100%;
@@ -37,28 +45,12 @@ body {
   font-weight: 600;
 }
 
-.hero-text h1{
-    text-align: center;
+
+ .content-container{
+    margin: auto;
     padding: 10px;
-  
-}
-
-#profile{
-    /* text-align: center; */
-    background-size: cover;
-    background-color: white;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-#profile .container{
-    position: center;
-    background-size: cover ;
-    height: 40%;
-    width: 60%;
-    
+    width: 50%;
+    display: block;
 
 }
 
@@ -82,56 +74,15 @@ body {
 }
 
 
-#experiences{
-    
-    background-size: cover;
-    background-color:wheat;
-    height: 150%;
-    width: 100%;
-
-}
-#experiences h1{
-    text-align: center;
-    padding: 10px;
-}
-
-#experiences .container{
-    
-    background-size: cover ;
-    height: 40%;
-    width: 60%; 
-
-
-}
-
-
-
-#abilities {
-
-    background-size: cover;
-    background-color:white;
-    width: 100%;
-    height: 100%;
-       
-}
-#abilities h1{
-    text-align: center;
-    padding: 10px;
-}
 
 #abilities ul{
     list-style-type: none;
     padding: 0;
 }
 
-#abilities .container{
-    background-size: cover ;
-    height: 40%;
-    width: 60%;
-}
 
 #abilities ul > li { min-height: 30px; padding: 3px 0px; }
-#abilities ul > li:hover { background: #F2F2F2; }
+#abilities ul > li:hover { background: white; }
 #abilities ul > li .ability-title { display: inline-block; width: 60%; }
 #abilities ul > li .ability-score { float: right; }
 #abilities ul > li .ability-score .glyphicon { 
@@ -148,39 +99,20 @@ body {
 
 
 
-#projects {
-    background-size: cover;
-    background-color:wheat;
-    width: 100%;
-    height: 100%;
-}
 
-#projects h1{
-    text-align: center;
-    padding: 10px;
-}
-
-#projects .container{
-    background-size: cover ;
-    height: 40%;
-    width: 60%;
-}
-
-#projects .row > div { margin-bottom: 30px; }
+#projects .row > div {  margin-bottom: 30px; }
 #projects figure { position: relative; overflow: hidden; }
-#projects figure h3 { color:white; font-weight: 600; margin-bottom: 5px; }
+#projects figure h3 { color:dimgray; font-weight: 600; margin-bottom: 5px; }
 #projects figure p > strong { width: 60px; display: inline-block; margin: 0px; }
 
-#projects figure img { width: 110%; box-shadow: gray 0 0 10px;height: 100%;
-    width: 100%;}
+#projects figure img {  box-shadow: black 0 0 10px;}
 
 #projects figure figcaption {
     padding: 20px 30px;
     position: absolute;
     top: 0px;
     left: 0px;
-    height: 100%;
-    width: 100%;
+    
 }
 #projects figure a {
 	z-index: 1000;
@@ -191,8 +123,7 @@ body {
     position: absolute;
     top: 0px;
     left: 0px;
-    height: 100%;
-    width: 100%;
+    
 }
 #projects figure .icon { 
 	background: wheat;
@@ -209,31 +140,11 @@ body {
 	padding: 15px;
 }
 
-#contact {
-    color: white;
-    background-size: cover;
-    background-color:#434242;
-    width: 100%;
-    height: 100%;
 
-}
 
-#contact h1{
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-#contact .container{
-    
-    background-size: cover ;
-    height: 40%;
-    width: 60%;
-    font-size: 16px;
-}
 #contact ul{ list-style-type: none;}
 #contact .row * { color: white; }
-#contact a { display: block; line-height: 32px; margin-bottom: 30px; opacity: 0.6; }
+#contact a {line-height: 32px; margin-bottom: 30px; opacity: 0.6; }
 #contact a:hover { opacity: 1; filter:alpha(opacity=100); text-decoration: none; }
 
 
@@ -260,7 +171,7 @@ body {
 
 figure.effect {
 	background-color: wheat;
-	color: white;
+	color: dimgray;
 }
 
 figure.effect img {
