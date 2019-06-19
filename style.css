@@ -15,8 +15,54 @@ h1{ text-align: center; margin: 0; padding: 0; color: dimgray;}
 .background-wheat { background:wheat; padding-bottom: 20px;}
 .background-grey{background:dimgray;color: white;padding-bottom: 20px;}
 
+nav{
+	border: 0px; 
+	background-color: grey; 
+	position: absolute; 
+	top: 100%; 
+	right: 5%; 
+	width: 110px;
+	z-index: 999; 
+	border: 1px solid white;
+	box-shadow: dimgray 0 0 5px; 
+}
 
 
+.fixed nav{
+	position: fixed;
+	top:60px;
+  }
+
+.navbar-nav ul{
+list-style-type: none;
+padding: 0;
+margin: 0;
+width: 110px;
+
+}
+
+
+
+.navbar-nav li a{
+	display: block; 
+	height: 80px; 
+	text-align: center; 
+	padding-top: 30px; 
+	font-weight: 600; 
+	color: white; 
+	text-decoration: none;
+}
+
+  .navbar-nav a:hover {
+	color: black;
+  }
+  
+  .navbar-nav .active
+  {
+	background-color: wheat;
+  }
+
+  
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
@@ -31,8 +77,8 @@ h1{ text-align: center; margin: 0; padding: 0; color: dimgray;}
   position: relative;
   opacity: 0.8;
  
-  
 }
+
 /* Place text in the middle of the image */
 .hero-text {
   text-align: center;
@@ -44,6 +90,21 @@ h1{ text-align: center; margin: 0; padding: 0; color: dimgray;}
   font-size: 20px;
   font-weight: 600;
 }
+
+.hero-image  .scroll-down  { border: 1px solid white; height: 80px; width: 110px; display: block; position: absolute; bottom: 0px; right: 5%; background-color: #222222; text-align: center; z-index: 6; }
+.hero-image  .scroll-down .glyphicon { 
+	color: #FFFFFF; 
+	font-size: 30px; 
+	padding-right: 2px; 
+	padding-top: 20px; 
+	
+	animation-name: wiggle;
+	animation-duration: 1.2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}
+.hero-image  .scroll-down:hover .glyphicon { padding-top: 25px; }
 
 
  .content-container{
@@ -150,23 +211,31 @@ h1{ text-align: center; margin: 0; padding: 0; color: dimgray;}
 #contact a:hover { opacity: 1; filter:alpha(opacity=100); text-decoration: none; }
 
 
-/* 
-.hero-image .scroll-down { height: 80px; width: 110px; display: block; position: absolute; bottom: 0px; right: 5%; background-color: #222222; text-align: center; z-index: 6; }
-.hero-image .scroll-down .glyphicon { 
-	color: #FFFFFF; 
-	font-size: 30px; 
-	padding-right: 2px; 
-	padding-top: 20px; 
+@media (max-width: 767px) {
+	.hero-image .scroll-down { width: 100%; right: 0px; }
 	
-	animation-name: wiggle;
-	animation-duration: 1.2s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-direction: normal;
+	#navigation {display: none;}
+	
+	/* nav  { left: 0px; width: 100%; }
+	.navbar-nav > li { height: 60px; }
+	.navbar-nav > li a { height: 60px; text-align: center; padding-top: 20px; font-weight: 600; color: #FFFFFF; }
+	
+	.fixed .nav { top: 0px; } */
 }
-.hero-image .scroll-down:hover .glyphicon { padding-top: 25px; } */
 
+@keyframes wiggle {
+	0% {
+		padding-top: 20px;
+	}
 
+	50% {
+		padding-top: 28px;
+	}
+
+	100% {
+		padding-top: 20px;
+	}
+}
 /*---------------*/
 /***** EFFECT *****/
 /*---------------*/

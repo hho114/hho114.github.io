@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
  
-<body>
+<body data-spy="scroll" data-target="#navigation" >
   
     <!-- facebook sdk -->
     <div id="fb-root"></div>
@@ -24,13 +24,33 @@
           <p>“Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live” </p>
           <br> ― John Woods
         </div>
-          <!-- <a href="#profile" class="scroll-down">	
+          <a href="#profile" class="scroll-down">	
           <span class="glyphicon glyphicon-chevron-down"></span>
-        </a>     -->
+        </a>    
     </section>
   </header>
     
   <main class="main-content-area">
+    
+      <nav id="navigation" >
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  <i class="fa fa-bars"></i>
+              </button>
+      </div>
+        <div class="nav navbar-nav ">
+          <ul >
+            <li class="active"><a  href="#profile">Profile</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#abilities">Abilities</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+     
+    
+    
     <section id="profile" class="background-white">
       <div class="content-container">
         <div class="intro-profile">
@@ -379,7 +399,7 @@
     </section>
   </main>
   
-  
+  <script src="script.js"></script>
 
 </body>
   
