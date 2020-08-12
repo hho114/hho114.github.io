@@ -6,6 +6,7 @@
   "author": "Alex Ho",
   "license": "MIT",
   "starter-name": "alex-portfolio",
+  "homepage": "https://alexhuyho.com",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
