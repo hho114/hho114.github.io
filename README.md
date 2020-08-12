@@ -2,8 +2,4 @@
 
 Personal website
 
-## TO DO
-
-- Update resume
-
-- Consider between github jekyll vs flutter web or PHP
+This branch to keep old version for later road track web project
