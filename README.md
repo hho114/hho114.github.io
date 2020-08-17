@@ -2,6 +2,10 @@
 
 Personal website
 
+## To deploy
+
+```npm run deploy```
+
 ## TO DO
 
 - Update resume
