@@ -2,6 +2,10 @@
 
 Personal website
 
+## To run project local
+
+```gatsby develop```
+
 ## To deploy
 
 ```npm run deploy```
