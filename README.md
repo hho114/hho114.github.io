@@ -2,6 +2,8 @@
 
 Personal website
 
+Note: Do not use master branch for develop or deploy
+
 ## To run project local
 
 ```gatsby develop```
@@ -14,4 +16,6 @@ Personal website
 
 - Update resume
 
-- Consider between github jekyll vs flutter web or PHP
+- Update name domain to xstar.dev
+
+- change to gatsby-theme-novela

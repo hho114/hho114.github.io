@@ -1,11 +1,11 @@
 {
   "private": true,
-  "name": "alex",
-  "description": "Playful and Colorful One-Page portfolio featuring Parallax effects and animations",
+  "name": "xstar",
+  "description": "Develop innovative and creative products and services that provide total communication and information solutions.",
   "version": "0.2.0",
   "author": "Alex Ho",
   "license": "MIT",
-  "starter-name": "alex-portfolio",
+  "starter-name": "alexhuyho",
   "homepage": "https://alexhuyho.com",
   "scripts": {
     "build": "gatsby build",

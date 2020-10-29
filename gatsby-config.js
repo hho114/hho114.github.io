@@ -10,11 +10,11 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // Of course you can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/master/themes/gatsby-theme-cara/gatsby-config.js
-    siteTitle: "Alex",
-    siteTitleAlt: `Alex - Portfolio`,
-    siteHeadline: "Alex - Gatsby Theme",
+    siteTitle: "Xstar",
+    siteTitleAlt: `Xstar Solutions`,
+    siteHeadline: "Xstar Solutions",
     siteUrl: "https://alexhuyho.com",
-    siteDescription: "Playful and Colorful One-Page portfolio featuring Parallax effects and animations",
+    siteDescription: "Develop innovative and creative products and services that provide total communication and information solutions.",
     siteLanguage: "en",
     siteImage: "/banner.png",
     author: "@hho114"
@@ -30,9 +30,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Alex Ho`,
-        short_name: `Alex`,
-        description: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+        name: `Xstar Solutions`,
+        short_name: `Xstar`,
+        description: `Develop innovative and creative products and services that provide total communication and information solutions.`,
         start_url: `/`,
         background_color: `#141821`,
         theme_color: `#f6ad55`,
