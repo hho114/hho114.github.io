@@ -1,0 +1,9 @@
+name: Alex Ho
+bio: |
+  Written by You. This is where your author bio lives. Share your work, your
+  joys and of course, your Twitter handle.
+avatar: ./avatars/avatar-lion.png
+social:
+  - url: https://github.com/hho114
+  - url: https://www.linkedin.com/in/hho114/
+featured: true

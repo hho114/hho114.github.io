@@ -1,67 +1,63 @@
-require(`dotenv`).config({
-  path: `.env`,
-})
-
-const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
-
 module.exports = {
-  // pathPrefix: "/hho114.github.io",
   siteMetadata: {
-    // You can overwrite values here that are used for the SEO component
-    // Of course you can also add new values here to query them like usual
-    // See all options: https://github.com/LekoArts/gatsby-themes/blob/master/themes/gatsby-theme-cara/gatsby-config.js
-    siteTitle: "Xstar",
-    siteTitleAlt: `Xstar Solutions`,
-    siteHeadline: "Xstar Solutions",
-    siteUrl: "https://alexhuyho.com",
-    siteDescription: "Develop innovative and creative products and services that provide total communication and information solutions.",
-    siteLanguage: "en",
-    siteImage: "/banner.png",
-    author: "@hho114"
 
+    title: `Profilio by Alex`,
+    name: `xstar`,
+    siteUrl: `https://novela.narative.co`,
+    description: `This is my description that will be used in the meta tags and important for search results`,
+    hero: {
+      heading: `Welcome to my profilio, the simplest way to start publishing with Gatsby.`,
+      maxWidth: 652,
+    },
+    social: [
+      {
+        name: `twitter`,
+        url: `https://twitter.com/AlexHo114`,
+      },
+      {
+        name: `github`,
+        url: `https://github.com/hho114`,
+      },
+      {
+        name: `linkedin`,
+        url: `https://www.linkedin.com/in/hho114`,
+      },
+      {
+        name: `youtube`,
+        url: `https://www.youtube.com/c/HuyAlexHo`,
+      },
+    ],
   },
   plugins: [
     {
-      resolve: `@lekoarts/gatsby-theme-cara`,
-      // See the theme's README for all available options
-      options: {},
+      resolve: "@narative/gatsby-theme-novela",
+      options: {
+        contentPosts: "content/posts",
+        contentAuthors: "content/authors",
+        basePath: "/",
+        authorsPage: true,
+        sources: {
+          local: true,
+          // contentful: true,
+        },
+      },
     },
-
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Xstar Solutions`,
-        short_name: `Xstar`,
-        description: `Develop innovative and creative products and services that provide total communication and information solutions.`,
+        name: `Novela by Narative`,
+        short_name: `Novela`,
         start_url: `/`,
-        background_color: `#141821`,
-        theme_color: `#f6ad55`,
+        background_color: `#fff`,
+        theme_color: `#fff`,
         display: `standalone`,
-        icons: [
-          
-          {
-            src: `/android-chrome-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/android-chrome-384x384.png`,
-            sizes: `384x384`,
-            type: `image/png`,
-          },
-        ],
+        icon: `src/assets/favicon.png`,
       },
     },
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-netlify`,
-    shouldAnalyseBundle && {
-      resolve: `gatsby-plugin-webpack-bundle-analyser-v2`,
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
       options: {
-        analyzerMode: `static`,
-        reportFilename: `_bundle.html`,
-        openAnalyzer: false,
       },
     },
-    
-  ].filter(Boolean),
-}
+  ],
+};
