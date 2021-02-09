@@ -2,7 +2,7 @@
   "name": "devfolio",
   "private": true,
   "description": "A modern and production-ready personal portfolio + blog template built with GatsbyJs and TailwindCSS",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "author": "Alex Ho",
   "dependencies": {
     "gatsby": "^2.24.67",
