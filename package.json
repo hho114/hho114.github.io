@@ -15,7 +15,8 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "predeploy": "gatsby build",
+    "deploy": "gh-pages -d public -b master"
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-cara": "^1.2.10",
