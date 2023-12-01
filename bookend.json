@@ -1,0 +1,12 @@
+{
+    "bookendVersion": "v1.0",
+    "shareProviders": [
+        "system",
+      "facebook",
+      "twitter",
+      "linkedin",
+      "whatsapp",
+      "email",
+      "sms"
+    ]
+  }
